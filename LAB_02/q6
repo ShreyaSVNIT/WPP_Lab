@@ -1,0 +1,29 @@
+import math
+
+l = []
+coord = []
+
+for i in range(3) :
+    l.append(eval(input("Enter a coordinate tuple")))
+
+for i in range(len(l)) : 
+    d = 0
+    min_dist = float('inf')
+    for j in range(len(l)) :
+        if (i != j) : 
+            d = math.sqrt(
+                (l[i][0] - l[j][0])**2 + 
+                (l[i][1] - l[j][1])**2 + 
+                (l[i][2] - l[j][2])**2 
+            )
+            if (d < min_dist ) : 
+                min_dist = d
+                nearest = l[j]
+
+    coord.append((l[i], nearest))
+
+for coord, nearest in coord : 
+    print(f"Point = {coord}, Neighbor = {nearest}")
+
+
+

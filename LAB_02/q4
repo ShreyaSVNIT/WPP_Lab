@@ -1,0 +1,40 @@
+# Create the list of numbers from 1 to 10000
+numbers = list(range(1, 10001))
+
+# Create empty lists for the equivalence classes
+class_0 = []
+class_1 = []
+class_2 = []
+class_3 = []
+class_4 = []
+
+# Distribute the numbers into the equivalence classes
+for number in numbers:
+    remainder = number % 5
+    if remainder == 0:
+        class_0.append(number)
+    elif remainder == 1:
+        class_1.append(number)
+    elif remainder == 2:
+        class_2.append(number)
+    elif remainder == 3:
+        class_3.append(number)
+    elif remainder == 4:
+        class_4.append(number)
+
+# Combine all the equivalence classes
+all_numbers = class_0 + class_1 + class_2 + class_3 + class_4
+
+# Sort the combined list to compare with the original list
+all_numbers.sort()
+
+# Check if the combined list is equal to the original list
+is_valid = all_numbers == numbers
+
+print("Equivalence classes:")
+print("Class 0:", class_0)
+print("Class 1:", class_1)
+print("Class 2:", class_2)
+print("Class 3:", class_3)
+print("Class 4:", class_4)
+print("Validity of equivalence classes:", is_valid)

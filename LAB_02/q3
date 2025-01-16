@@ -1,0 +1,13 @@
+length = int(input("Enter the length in feet: "))
+print("1- inches")
+print("2 - yards")
+print("3 - miles")
+print("4 - millimeters")
+print("5 - centimeters")
+print("6 - kilometers")
+print("7 - meters")
+choice = int(input("Enter your choice: "))
+choices = [1, 2, 3, 4, 5, 6, 7]
+conv = [12, 1/3, 1/5280, 304.8, 30.48, 1/3281, 0.3048]
+conversion = conv[choice - 1] * length
+print(conversion)

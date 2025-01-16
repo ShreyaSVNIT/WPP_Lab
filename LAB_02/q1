@@ -1,0 +1,17 @@
+#a list of integers 0 through 49
+
+listA = []
+for i in range(50) :
+    listA.append(i)
+print(listA)
+
+listB = []
+for i in range(51) :
+    listB.append((i + 1) * (i + 1))
+print(listB)
+
+listC = []
+for i in range(26) :
+    letter = chr(97 + i)
+    listC.append(letter * ( i + 1))
+print(listC)
