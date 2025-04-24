@@ -1,0 +1,131 @@
+body{
+    font-family:Fira-Sans,sans-serif;
+     margin:0;
+     padding:0;
+}
+
+.header{
+    background:#657184;
+    display:flex;
+
+}
+.header-container{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+
+.logo{
+    width:100px;
+    margin-left: 30px;
+}
+
+.pic{
+    width: 112px;
+    height: 90px;
+    right: 50px;
+    margin-right: 50px;
+
+}
+
+.title{
+    font-size:10px;
+    text-align:center;
+    margin-bottom: -20px;
+
+}
+.hindi {
+    font-size: 27px;
+    margin-bottom: -5px;
+}
+
+
+nav{
+    background-color: #0b78a6;
+    padding:15px 0;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    padding: 0;
+    margin:0;
+}
+
+nav ul li{
+    margin: 0 15px;
+    position:relative;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:1px;
+
+}
+nav ul li a::after {  
+    content: " ▼";
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+nav ul li:last-child a::after {
+    content: ""; 
+}
+
+.container{
+    display:flex;
+    align-items:stretch;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.sidebar{
+    width:17%;
+    padding: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    background: #56bddf;
+    padding: 8px;
+    margin: 5px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+main {
+    width: 60%;
+    text-align: center;
+}
+
+.banner img {
+    display:flex;
+    align-items:center;
+    width: 100%;
+    height: auto;
+    margin-top: 18px;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.last-image img{
+    padding:0px 0px 0px 53px;
+    height:100px;
+    width:100px;
+}
